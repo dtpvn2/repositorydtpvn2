@@ -1,0 +1,9 @@
+COLUMN TABLE "olduser1" (
+   ID INTEGER NOT NULL comment 'userID',
+   FirstNAME NVARCHAR(255) comment 'First Name',
+   EMAIL NVARCHAR(255) comment 'Email',
+   salary NVARCHAR(10) comment 'Salary',
+   PRIMARY KEY (ID)
+)
+comment 'user data comment for desc'
+UNLOAD PRIORITY 5 AUTO  MERGE 
