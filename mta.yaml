@@ -1,0 +1,16 @@
+_schema-version: "2.1"
+ID: Adiprojname
+version: 0.0.1
+modules:
+- name: dbmodulename
+  type: hdb
+  path: dbmodulename
+  requires:
+  - name: hdi_dbmodulename
+    properties:
+      TARGET_CONTAINER: ~{hdi-container-name}
+resources:
+- name: hdi_dbmodulename
+  type: com.sap.xs.hdi-container
+  properties:
+    hdi-container-name: ${service-name}
